@@ -283,6 +283,7 @@ header .Shop_parent:hover .sub_nav {
 }
 
 #content .card_product {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: auto auto auto;
     row-gap: 50px;

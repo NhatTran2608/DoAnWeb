@@ -1,3 +1,9 @@
+var modal = document.querySelector('.modal')
+var modalContainer = modal.children[0].children[0]
+var buttonYes = modalContainer.parentElement.children[1].children[0]
+var buttonNo = modalContainer.parentElement.children[1].children[1]
+console.log(buttonNo)
+
 
 /*Thêm phẩy phần nghìn */
 const formatCurrency = (amount, locale = "vi-VN") => {
@@ -67,14 +73,12 @@ if (GetlocalCart[0] == null) {
     tableTotal +=
         `<b class="total_cost">Tổng chi phí: <span>${formatCurrency(total)}</span></b>
                  <div class="buy">
-                    <button class="buy_now" onclick ="DeleteAll(this)">Mua ngay</button>
+                    <button class="buy_now">Mua ngay</button>
                  </div>
             `
     Cost.innerHTML = tableTotal
-
-
 }
-
+/*onclick ="DeleteAll(this)"*/
 
 function Delete(e) {
     let items = []
@@ -110,11 +114,18 @@ function DeleteAll(e) {
 
 var tong = formatCurrency(total)
 
-document.querySelector('.buy_now').addEventListener('click', function () {
-    if (confirm('Bạn chắc chắn muốn mua hàng?\nĐơn hàng của bạn là: ' + tong))
-        alert('Mua hàng thành công\nCảm ơn bạn!!!')
-    else {
-        alert('Mua hàng không thành công')
+modalContainer.innerText = `Bạn có chắc chắn mua sản phẩm này không ? \n Tổng số tiền của đơn hàng là : ${tong}`
 
-    }
+document.querySelector('.buy_now').addEventListener('click',function() {
+    modal.classList.remove('hide')
+})
+
+buttonYes.addEventListener('click',function() {
+    modal.classList.add('hide')
+    DeleteAll(this)
+    alert('Cảm ơn bạn đã mua sản phẩm của chúng tui')
+})
+
+buttonNo.addEventListener('click',function() {
+    modal.classList.add('hide')
 })

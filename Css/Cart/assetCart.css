@@ -305,3 +305,50 @@ footer .contact_footer i {
 footer .contact_footer p {
     margin-top: 22px;
 }
+
+/*Modal*/
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.modal_container {
+    background-color: white;
+    margin: 230px auto;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+.modal_container p {
+    line-height: 1.5;
+    font-style: italic;
+}
+
+
+.modal_container .button_success {
+    margin-top: 20px;
+}
+
+.modal_container .button_success .no {
+    margin-left: 50px;
+}
+
+.modal_container .button_success button {
+    padding: 7px 12px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+.hide {
+    visibility: hidden;
+}
