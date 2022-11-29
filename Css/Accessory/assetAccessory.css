@@ -1,0 +1,44 @@
+.hide_list {
+    display: none;
+}
+
+#content .body_phone .title_phone {
+    font-size: 15px;
+}
+
+#content .list_products .head_list li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#content .list_product2 {
+    max-width: 300px;
+    height: 670px;
+    border-radius: 15px;
+    margin-left: 20px;
+    transition: 0.25s;
+}
+
+
+#content .list_product2:hover {
+    transform: scale(1.05);
+    border: 1px solid #dadada;
+}
+
+#content .bank img {
+    border-radius: 15px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#content .cost {
+    padding: 10px 7px;
+}
+
+#content .cost_phone2,
+.cost_phone3 {
+    background-color: #ef8573;
+    padding: 5px 8px;
+    border-radius: 15px;
+    color: white;
+}

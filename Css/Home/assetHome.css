@@ -1,0 +1,333 @@
+/*Slider*/
+.slider-edit {
+    text-align: center;
+    margin: auto;
+}
+
+#slider {
+    margin-top: 60px;
+}
+
+#slider .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slider #img_phone img {
+    width: 100%;
+}
+
+#slider #img_phone {
+    border-radius: 8px;
+}
+
+#slider .click1,
+.click2,
+.click3 {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    outline: none;
+    color: #ccc;
+    border: none;
+    margin-top: 10px;
+}
+
+#slider .button_click {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#slider .button_click button {
+    margin-left: 10px;
+}
+
+#slider .control {
+    color: black;
+    position: absolute;
+    top: 42%;
+}
+
+#slider .control.prev {
+    left: 180px;
+}
+
+#slider .control.next {
+    right: 180px;
+}
+
+#slider .control i {
+    background-color: #dadada;
+    font-size: 30px;
+    border-radius: 15px;
+    opacity: 0.6;
+}
+
+#slider .control i:hover {
+    background-color: #ccc;
+}
+
+.click1:after,
+.click2:after,
+.click3:after {
+    background-color: black;
+}
+
+/*End Slider*/
+
+#content {
+    max-width: 100%;
+    margin: 0px auto;
+    margin-bottom: 100px;
+}
+
+#content .collums {
+    padding: 15px;
+}
+
+/*About content*/
+#content .about_content {
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    margin: 20px 0px;
+    justify-content: center;
+}
+
+#content .about_content h3 {
+    font-size: 15px;
+    margin: 5px 0px;
+    font-weight: 600;
+}
+
+#content .about_content p {
+    color: black;
+    opacity: 0.6;
+}
+
+#content .about_content i {
+    font-size: 40px;
+}
+
+/*ENd About content*/
+#content .title_content i {
+    font-size: 25px;
+}
+
+#content .title_content {
+    font-size: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+
+/* phần background trắng che line bên dưới */
+#content .title_content h3 span {
+    background-color: #fff;
+    padding: 0px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* line của h2 */
+#content .title_content h3::after {
+    background-color: black;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+#content .title_content h3::before {
+    background-color: black;
+    content: "";
+    display: block;
+    height: 1px;
+    top: 15px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#content .title_content>p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #9c9c9c;
+}
+
+
+/*End title content*/
+/*count down sale*/
+#content .count_down {
+    display: flex;
+    justify-content: center;
+}
+
+#content .count_down p {
+    margin-bottom: 3px;
+}
+
+#content .count_down .item {
+    text-align: center;
+    margin: 0px 10px;
+    padding: 6px 10px;
+    background-color: #9c9c9c;
+    color: white;
+    border-radius: 15px;
+}
+
+/*End count down sale*/
+
+#content .list_system {
+    margin-left: 12.5%;
+}
+
+#content .list_system button {
+    padding: 10px 10px;
+    border: 1px solid #dadada;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#content .System {
+    width: 160px;
+    height: 78px;
+    background-color: white;
+    box-shadow: 0 2px 6px 1px rgb(181 181 181 / 50%);
+    list-style: none;
+}
+
+#content .System li {
+    padding: 10px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #dadada;
+}
+
+#content .System li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+#content .System li:hover {
+    background-color: #dadada;
+}
+
+/*Product*/
+#content .list_product {
+    max-width: 280px;
+    height: 650px;
+    border-radius: 15px;
+    margin-left: 20px;
+    transition: 0.25s;
+}
+
+#content .card_product {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 50px;
+    justify-content: center;
+}
+
+#content .iphone {
+    border-radius: 15px;
+}
+
+#content .iphone img {
+    border-radius: 15px;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#content .body_phone {
+    padding: 20px;
+    overflow: hidden;
+}
+
+#content .body_phone h3 {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#content .Gb_phone {
+    margin-bottom: 20px;
+
+}
+
+#content .Gb_phone span {
+    padding: 8px 6px;
+    background-color: #dadada;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#content .Gb_phone span:hover {
+    background-color: #9c9c9c;
+}
+
+#content .list_product>img {
+    width: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#content .list_product:hover {
+    transform: scale(1.05);
+    border: 1px solid #dadada;
+}
+
+#content .bank img {
+    border-radius: 15px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+/*Sub_nav*/
+header .sub_nav {
+    background-color: white;
+    width: 150px;
+    position: absolute;
+    display: none;
+    margin-top: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header .sub_nav a {
+    font-size: 13px;
+}
+
+header .sub_nav li:hover {
+    background: #dadada;
+}
+
+header .Shop_parent:hover .sub_nav {
+    display: block;
+}
+
+header .cart_icon span {
+    font-size: 15px;
+    text-decoration: none;
+    position: absolute;
+    top: -5px;
+
+}
+
+
+
+
+.wrapper {
+    text-align: center;
+}

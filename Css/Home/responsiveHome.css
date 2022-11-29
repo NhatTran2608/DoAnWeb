@@ -1,0 +1,35 @@
+/*Ipad dọc(768 x 1024)*/
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+    #content .about_content {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+
+    }
+
+    #content .about_content p {
+        text-align: justify;
+    }
+
+    .collums {
+        text-align: center;
+        margin: auto;
+    }
+
+
+}
+
+
+
+
+
+/*Iphone(480 x 640)*/
+@media only screen and (max-width: 739px) {
+
+    #content .about_content {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+
+    }
+
+
+}

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Burh Shop</title>
+    <link rel="stylesheet" href="img/">
+    <link rel="icon" href="./bxs-smile.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Shop/assetShop.css">
+    <link rel="stylesheet" href="./Css/Home/assetHome.css">
+    <link rel="stylesheet" href="./Css/Home/responsiveHome.css">
+    <link rel="stylesheet" href="Shop/responsiveShop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="frist_header">
+                <div class="number_phone line_H">
+                    <p>
+                        <i class='bx bxs-phone phone'></i>
+                        0373357405
+                    </p>
+                </div>
+                <div class="shop_name">
+                    <h1>BURHSHOP
+                        <i class='bx bx-smile'></i>
+                    </h1>
+                </div>
+                <span class="icon_shop margin_20px">
+                    <span class="search_icon">
+                        <input class="search_input hide" type="text" placeholder="Tìm kiếm...">
+                        <i class='bx bx-search search'></i>
+                    </span>
+                    <span class="user_icon">
+                        <i class='bx bx-user'></i>
+                    </span>
+                    <span class="cart_icon">
+                        <a href="cart.html">
+                            <i class='bx bx-cart cartNum'><span>0</span></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+
+            <nav>
+                <ul class="nav_body">
+                    <li><a href="#">Home</a></li>
+                    <li class="Shop_parent"><a href="./shop.html">Shop<i class='bx bx-chevron-down'></i>
+                            <ul class="sub_nav">
+                                <li><a href="./shop.html">Apple</a></li>
+                                <li><a href="./androi.html">Android</a></li>
+                                <li><a href="./accessory.html">Phụ kiện</a></li>
+                            </ul>
+                        </a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div id="slider">
+            <div class="container">
+                <div class="wrapper">
+                    <img src="./img/img0.webp" alt="" id="img_phone">
+                    <div class="button_click">
+                        <button onclick="imageClick()" class="click1"></button>
+                        <button onclick="imageClick1()" class="click2"></button>
+                        <button onclick="imageClick2()" class="click3"></button>
+                        <span onclick="next()" class="control prev">
+                            <i class='bx bx-left-arrow-alt'></i>
+                        </span>
+                        <span onclick="" class="control next">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <!--Content container-->
+            <div class="content_container">
+                <div class="about_content">
+                    <div class="collums truck_ship width ">
+                        <i class='bx bxs-truck'></i>
+                        <h3>GIAO HÀNG TOÀN QUỐC</h3>
+                        <p>Thời gian giao hàng linh động từ 3 - 4 - 5 ngày tùy khu vực, đôi khi sẽ nhanh hơn hoặc chậm
+                            hơn. Mong Quý Khách hàng thông cảm và cố gắng đợi hàng giúp shop.</p>
+                    </div>
+
+                    <div class="collums change_product width ">
+                        <i class='bx bx-sync'></i>
+                        <h3>CHÍNH SÁCH ĐỔI TRẢ HÀNG</h3>
+                        <p>Sản phẩm được phép đổi hàng trong vòng 36h nếu phát sinh lỗi từ nhà sản xuất (Yêu cầu: hình
+                            ảnh phần bị lỗi rõ nét, chi tiết và đầy đủ).</p>
+                    </div>
+
+                    <div class="collums pay width ">
+                        <i class='bx bx-coin'></i>
+                        <h3>GIAO HÀNG NHẬN TIỀN VÀ KIỂM KÊ ĐƠN HÀNG</h3>
+                        <p>Được phép kiểm hàng trước khi thanh toán. Lưu ý: Trường hợp Quý Khách hàng đã nhận hàng về
+                            nhà, vui lòng quay video unbox đơn hàng trong tình trạng nguyên vẹn để có căn cứ xác thực
+                            đơn hàng gặp phải vấn đề, trường hợp không có video shop không thể hỗ trợ.</p>
+                    </div>
+
+                    <div class="collums phone_call width ">
+                        <i class='bx bx-phone-call'></i>
+                        <h3>ĐẶT HÀNG ONLINE VÀ KIỂM TRA ĐƠN HÀNG VUI LÒNG LIÊN HỆ</h3>
+                        <p>Hotline: 037 335 7405.</p>
+                    </div>
+                </div>
+
+                <div class="title_content">
+                    <h3><span> BURHSHOP
+                            <i class='bx bx-smile'></i>
+                        </span></h3>
+                    <p>Sản phẩm chất lượng</p>
+                    <P>Uy tín hàng đầu</P>
+                    <br>
+                    <p>Đang sale khủng</p>
+                </div>
+
+                <div class="count_down">
+
+                    <span class="item">
+                        <p>Ngày</p>
+                        <span class="day">Day</span>
+                    </span>
+
+                    <span class="item">
+                        <p>Giờ</p>
+                        <span class="hours">Hours</span>
+                    </span>
+
+                    <span class="item">
+                        <p>Phút</p>
+                        <span class="minute">Minute</span>
+                    </span>
+
+                    <span class="item">
+                        <p>Giây</p>
+                        <span class="second">Second</span>
+                    </span>
+                </div>
+                <!--List System-->
+                <div class="list_system">
+                    <button class="list">Loại sản phẩm
+                        <i class='bx bxs-chevron-down'></i>
+                    </button>
+                    <ul class="System hide">
+                        <li><a href="androi.html">Android</a></li>
+                        <li><a href="shop.html">IOS</a></li>
+                    </ul>
+                </div>
+                <!--End List System-->
+                <!--list product-->
+                <d<div class="card_product">
+                    <!--Product list-->
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/iphone13 pro max.webp" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Iphone 13 Pro Max</h3>
+                                <div class="Gb_phone">
+                                    <span>256GB</span>
+                                    <span>512GB</span>
+                                </div>
+
+                                <div class="cost">
+                                    <span class="cost_phone"><b>27.490.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>33.990.000</strike><u>đ</u></span>
+                                </div>
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Apple A15 Bionic</span>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.7 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        6GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 1.1 triệu khi thanh toán bằng thẻ ngân hàng
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Product list 2-->
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/iphone 13 pro.webp" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Iphone 13 Pro</h3>
+                                <div class="Gb_phone">
+                                    <span>128GB</span>
+                                    <span>256GB</span>
+                                </div>
+
+                                <div class="cost">
+                                    <span class="cost_phone"><b>24.490.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>30.990.000</strike><u>đ</u></span>
+                                </div>
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Apple A15 Bionic</span>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.7 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        6GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 1.1 triệu khi thanh toán bằng thẻ ngân hàng
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Product list 3-->
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/iphone 13.webp" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Iphone 13</h3>
+                                <div class="Gb_phone">
+                                    <span>256GB</span>
+                                    <span>512GB</span>
+                                </div>
+
+                                <div class="cost">
+                                    <span class="cost_phone"><b>27.490.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>33.990.000</strike><u>đ</u></span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Apple A15 Bionic</span>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.7 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        6GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 1.1 triệu khi thanh toán bằng thẻ ngân hàng
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Product list 4-->
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/iphone 13 mini.webp" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Iphone 12</h3>
+                                <div class="Gb_phone">
+                                    <span>64GB</span>
+                                    <span>128GB</span>
+                                </div>
+                                <div class="cost ">
+                                    <span class="cost_phone"><b>16.990.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>33.990.000</strike><u>đ</u></span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Apple A15 Bionic</span>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.7 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        6GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 1.1 triệu khi thanh toán bằng thẻ ngân hàng
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Product List-->
+
+                    <!--Product list 5-->
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/iphone 14 plus.webp" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Iphone 14 Pro Max</h3>
+                                <div class="Gb_phone">
+                                    <span>256GB</span>
+                                    <span>512GB</span>
+
+                                </div>
+                                <div class="cost">
+                                    <span class="cost_phone"><b>33.990.000</b><u>đ</u></span>
+                                    <span class="text_decor">2.955.000<u>đ</u>/tháng</span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Apple A15 Bionic</span>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.7 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        6GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 1.1 triệu khi thanh toán bằng thẻ ngân hàng
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Product List 5-->
+
+                    <!--Product list 6-->
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/iphone 14 pro.webp" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Iphone 14 Pro</h3>
+                                <div class="Gb_phone">
+                                    <span>256GB</span>
+                                    <span>512GB</span>
+
+                                </div>
+                                <div class="cost">
+                                    <span class="cost_phone"><b>30.990.000</b><u>đ</u></span>
+                                    <span class="text_decor">2.687.500<u>đ</u>/tháng</span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Apple A15 Bionic</span>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.7 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        6GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 1.1 triệu khi thanh toán bằng thẻ ngân hàng
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Product List 6-->
+
+                    <!--Product list 7-->
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/iphone 14 plus.webp" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Iphone 14 Plus</h3>
+                                <div class="Gb_phone">
+                                    <span>256GB</span>
+                                    <span>512GB</span>
+                                </div>
+                                <div class="cost">
+                                    <span class="cost_phone"><b>27.990.000</b><u>đ</u></span>
+                                    <span class="text_decor">2.464.500<u>đ</u>/tháng</span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Apple A15 Bionic</span>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.7 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        6GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 1.1 triệu khi thanh toán bằng thẻ ngân hàng
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Product List 7-->
+
+                    <!--Product list 8-->
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/iphone 14.webp" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Iphone 14</h3>
+                                <div class="Gb_phone">
+                                    <span>256GB</span>
+                                    <span>512GB</span>
+                                </div>
+                                <div class="cost">
+                                    <span class="cost_phone"><b>24.990.000</b><u>đ</u></span>
+                                    <span class="text_decor">2.197.000<u>đ</u>/tháng</span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Apple A15 Bionic</span>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.7 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        6GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 1.1 triệu khi thanh toán bằng thẻ ngân hàng
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Product List 8-->
+
+                    <!--Product List 9-->
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/iphone 14.webp" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Iphone 11</h3>
+                                <div class="Gb_phone">
+                                    <span>64GB</span>
+                                    <span>128GB</span>
+                                </div>
+                                <div class="cost">
+                                    <span class="cost_phone"><b>11.499.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>14.999.000</strike><u>đ</u></span>
+                                </div>
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Apple A15 Bionic</span>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.7 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        6GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 1.1 triệu khi thanh toán bằng thẻ ngân hàng
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            <!--End product-->
+            <div class="title_content mar_top">
+                <h3><span> BURHSHOP
+                        <i class='bx bx-smile'></i>
+                    </span></h3>
+                <p>Sản phẩm chất lượng</p>
+                <P>Cam kết 1 đổi 1</P>
+            </div>
+        </div>
+        <!--End Content container-->
+
+        </div>
+
+
+
+        <footer>
+            <div class="border"></div>
+            <div class="footer_container">
+                <div class="info_contact line_text_footer">
+                    <h3>Thông tin liên hệ</h3>
+                    <br>
+                    <p>5/15 Tô Hiệu, Tân Thới Hòa, Tân Phú, Hồ Chí Minh (AM: 08H30 -> 11H45, PM: 13H30 -> 17H45)
+                        .Chân thành cảm ơn!</p>
+                    <br>
+                    <span><b>Phone: </b></span><span>037 335 7405.</span>
+                    <br>
+                    <span><b>Email: </b></span><span>NAV@gmail.com</span>
+                </div>
+
+                <div class="support line_text_footer">
+                    <h3>Chính sách hỗ trợ</h3>
+                    <br>
+                    <a href="#">Tìm kiếm</a>
+                    <br>
+                    <a href="#">Giới Thiệu</a>
+                    <br>
+                    <a href="#">Chính sách đổi trả</a>
+                    <br>
+                    <a href="#">Chính sách bảo mật</a>
+                    <br>
+                    <a href="#">Điều khoản dịch vụ</a>
+                    <br>
+                </div>
+
+                <div class="contact_footer  line_text_footer">
+                    <h3>Thông tin liên kết</h3>
+                    <p>Hãy kết nối với chúng tôi.</p>
+                    <span><i class='bx bxl-facebook-square'></i></span>
+                    <span><i class='bx bxl-instagram'></i></span>
+                    <span><i class='bx bxl-tiktok'></i></span>
+                    <span><i class='bx bxl-twitter'></i></span>
+                </div>
+
+                <div class="report line_text_footer">
+                    <h3>Khiếu nại dịch vụ, góp ý</h3>
+                    <br>
+                    <p>Giờ nào cũng rãnh <br> Bạn vui lòng liên hệ <a href="Contact.html">Tại đây</a></p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="./Js/backHome.js"></script>
+</body>
+
+</html>

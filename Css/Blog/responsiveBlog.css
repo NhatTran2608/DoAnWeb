@@ -1,0 +1,40 @@
+/*Ipad dọc(768 x 1024)*/
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+    #blog section {
+        display: grid;
+        grid-template-columns: 300px auto;
+        column-gap: 50px;
+    }
+
+    #blog .img_news {
+        width: 350px;
+    }
+
+}
+
+
+
+
+
+/*Iphone(480 x 640)*/
+@media only screen and (max-width: 739px) {
+    #blog section {
+        margin: auto;
+        text-align: center;
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #blog .news p {
+        margin-bottom: 100px;
+    }
+
+    #blog .img_news {
+        text-align: center;
+        margin: auto;
+        width: 80%;
+    }
+
+
+}

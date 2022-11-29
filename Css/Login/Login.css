@@ -1,0 +1,94 @@
+.marginTop_10px {
+    margin-top: 20px;
+}
+
+.line_H {
+    line-height: 80px;
+}
+
+.line_text_footer {
+    line-height: 1.5;
+}
+
+#login {
+    margin: 150px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login .login_section {
+    width: 570px;
+}
+
+#login .login_section h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+#login .login_section p {
+    margin: 20px 0px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #999;
+}
+
+#login .login_section a {
+    text-decoration: none;
+    color: #009EFF;
+    transition: 0.25s;
+}
+
+#login .login_section a:hover {
+    color: #999;
+}
+
+#login .form_group input {
+    margin-left: 30px;
+}
+
+#login .form_group span {
+    font-size: 14px;
+    color: #c0c0c0;
+}
+
+
+
+#login .input_form {
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+}
+
+#login .input_form::placeholder {
+    color: #c0c0c0;
+}
+
+#login .form_group button {
+    float: right;
+    margin-right: 85px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: #47474c;
+    color: white;
+    cursor: pointer;
+}
+
+.button_login {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #009EFF;
+    border-radius: 2px;
+
+}
+
+.button_login_nen {
+    border-radius: 5px;
+    background-color: #fff;
+}

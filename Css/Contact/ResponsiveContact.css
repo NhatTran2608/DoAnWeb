@@ -1,0 +1,90 @@
+/*Ipad dọc(768 x 1024)*/
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+    .map_section {
+        width: 100%;
+    }
+
+    #contact .contact_box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #contact .info_contact {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #contact .contact_section {
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #contact h3 {
+        margin-left: 5px;
+    }
+
+}
+
+
+
+
+
+/*Iphone(480 x 640)*/
+@media only screen and (max-width: 739px) {
+    #contact .contact_box {
+        display: grid;
+        grid-template-columns: none;
+        text-align: center;
+        margin: auto;
+    }
+
+    .map_section {
+        display: none;
+    }
+
+    .container_contact h3 {
+        display: none;
+    }
+
+    #contact .info_contact {
+        width: 100%;
+    }
+
+    .contact_me {
+        padding-top: 50px;
+        margin: 10px;
+    }
+
+    #contact .info_contact {
+        margin-top: 25px;
+    }
+
+    .info_contact {
+        padding-top: 0px;
+    }
+
+    #contact {
+        display: block;
+    }
+
+    #contact .button_send button {
+        text-align: center;
+        margin: auto;
+    }
+
+    #contact .write_mail {
+        margin-left: 7px;
+    }
+
+    #contact .info_input {
+        margin: 5px 0px;
+    }
+
+    #contact .write_mail input {
+        height: 120px;
+        width: 105px;
+        padding: 5px;
+    }
+
+}

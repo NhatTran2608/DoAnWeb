@@ -1,0 +1,18 @@
+/*Ipad dọc(768 x 1024)*/
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+    #content .body_child img {
+        margin-top: 25px;
+        margin-left: 10px;
+        width: 30px;
+    }
+
+}
+
+
+/*Iphone(480 x 640)*/
+@media only screen and (max-width: 739px) {
+    #content .container {
+        margin-top: 50px;
+    }
+
+}

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+    <link rel="stylesheet" href="img/">
+    <link rel="icon" href="./bxs-smile.svg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Shop/assetShop.css">
+    <link rel="stylesheet" href="./Css/androi/assetAndroi.css">
+    <link rel="stylesheet" href="Shop/responsiveShop.css">
+    <link rel="stylesheet" href="Css/androi/responsiveAndroi.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="frist_header">
+                <div class="number_phone line_H">
+                    <p>
+                        <i class='bx bxs-phone phone'></i>
+                        0373357405
+                    </p>
+                </div>
+                <div class="shop_name">
+                    <h1>BURHSHOP
+                        <i class='bx bx-smile'></i>
+                    </h1>
+                </div>
+                <span class="icon_shop margin_20px">
+                    <span class="search_icon">
+                        <input class="search_input hide" type="text" placeholder="Tìm kiếm...">
+                        <i class='bx bx-search search'></i>
+                    </span>
+                    <span class="user_icon">
+                        <i class='bx bx-user'></i>
+                    </span>
+                    <span class="cart_icon">
+                        <a href="cart.html">
+                            <i class='bx bx-cart cartNum'><span>0</span></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+
+            <nav>
+                <ul class="nav_body">
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="Shop_parent"><a href="./shop.html">Shop<i class='bx bx-chevron-down'></i>
+                            <ul class="sub_nav">
+                                <li><a href="./shop.html">Apple</a></li>
+                                <li><a href="#">Android</a></li>
+                                <li><a href="./accessory.html">Phụ kiện</a></li>
+                            </ul>
+                        </a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="text_shop">
+            Sản phẩm Android <img class="img_apple" src="img/android-logo.png" alt="">
+        </h1>
+
+        <div id="content">
+            <div class="container">
+                <div class="list_products">
+                    <div class="head_list">
+                        <b>Danh mục sản phẩm</b>
+                        <i class='bx bx-chevron-down drop'></i>
+                        <ul class="list_phone">
+                            <li><a href="./shop.html">IPHONE</a></li>
+                            <li><a href="#">ANDROID</a></li>
+                            <li><a href="./accessory.html">PHỤ KIỆN</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="card_product">
+                    <!--Product list-->
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="img/samsung-galaxy-a04s-xanh-dd-moi.png" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Samsung A04s</h3>
+
+                                <div class="cost">
+                                    <span class="cost_phone"><b>3.990.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>4.290.000</strike><u>đ</u></span>
+                                </div>
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Exynos 850</span><br>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.5 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        4GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        64GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 1.1 triệu khi thanh toán bằng thẻ ngân hàng
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/xiaomi-redmi-10-bh.png" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Xiaomi Redmi 10</h3>
+
+                                <div class="cost">
+                                    <span class="cost_phone"><b>3.590.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>4.290.000</strike><u>đ</u></span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        MediaTek Helio G88</span><br>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.5 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        4GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 8% triệu khi thanh toán bằng thẻ ngân hàng</p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/oppo-a94-dd-1.png" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Oppo A94</h3>
+
+                                <div class="cost">
+                                    <span class="cost_phone"><b>5.490.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>5.990.000</strike><u>đ</u></span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Helio P95</span><br>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.43 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        8GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 8% triệu khi thanh toán bằng thẻ ngân hàng</p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/oppo-reno6z-dd.png" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Oppo Reno 6</h3>
+
+                                <div class="cost">
+                                    <span class="cost_phone"><b>7.490.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>9.990.000</strike><u>đ</u></span>
+                                </div>
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        MediaTek</span><br>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.43 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        8GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 8% triệu khi thanh toán bằng thẻ ngân hàng</p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/vivo-y16.png" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Vivo Y16 </h3>
+
+                                <div class="cost">
+                                    <span class="cost_phone"><b>4.490.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>4.990.000</strike><u>đ</u></span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Helio P35</span><br>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.51 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        4GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 8% triệu khi thanh toán bằng thẻ ngân hàng</p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/Nokia-g21-dd-docquyen.png" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Nokia G21</h3>
+
+                                <div class="cost">
+                                    <span class="cost_phone"><b>3.490.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>4.500.000</strike><u>đ</u></span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Unisoc T606</span><br>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.5 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        6GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 8% triệu khi thanh toán bằng thẻ ngân hàng</p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/Xiaomi-11t-dd-bh.png" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Xiaomi 11T</h3>
+
+                                <div class="cost">
+                                    <span class="cost_phone"><b>9.490.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>10.990.000</strike><u>đ</u></span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        MediaTek 1200U</span><br>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.67 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        8GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        128GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 8% triệu khi thanh toán bằng thẻ ngân hàng</p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/Vivo-t1x-xanh-dd.png" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Vivo T1x</h3>
+
+                                <div class="cost">
+                                    <span class="cost_phone"><b>4.190.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>4.900.000</strike><u>đ</u></span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Snapdragon 680</span><br>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.58 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        4GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        64GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 8% triệu khi thanh toán bằng thẻ ngân hàng</p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list_product">
+                        <div class="product_container">
+                            <div class="iphone">
+                                <img src="./img/xiaomi-11t-pro-dd-bh.png" alt="" class="img_iphone">
+                            </div>
+                            <div class="body_phone">
+                                <h3>Xiaomi 11T Pro 5G-256GB</h3>
+
+                                <div class="cost">
+                                    <span class="cost_phone"><b>11.490.000</b><u>đ</u></span>
+                                    <span class="text_decor"><strike>14.990.000</strike><u>đ</u></span>
+                                </div>
+
+
+                                <div class="body_child">
+                                    <span class="child_body">
+                                        <i class='bx bxs-chip'></i>
+                                        Snapdragon 888</span><br>
+                                    <span class="child_body">
+                                        <i class='bx bx-tab'></i>
+                                        6.67 inch</span>
+                                    <br>
+                                    <span class="child_body">
+                                        <i class='bx bxs-microchip'></i>
+                                        12GB</span>
+                                    <span>
+                                        <i class='bx bxs-hdd'></i>
+                                        256GB</span>
+                                    <br>
+                                    <span class="list_bank">
+                                        <span class="bank">
+                                            <img class="bank1 border" src="./img/bank1.webp" alt="">
+                                        </span>
+                                        <span class="bank2">
+                                            <img class="bank1 border" src="./img/bank2.webp" alt="">
+                                        </span>
+                                        <span class="bank3">
+                                            <img class="bank1 border" src="./img/bank3.webp" alt="">
+                                        </span>
+                                        <p class="about_bank1">Ưu đãi đến 1.1 triệu khi thanh toán bằng thẻ ngân hàng
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="footer_product">
+                                    <button class="add_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="border"></div>
+            <div class="footer_container">
+                <div class="info_contact line_text_footer">
+                    <h3>Thông tin liên hệ</h3>
+                    <br>
+                    <p>5/15 Tô Hiệu, Tân Thới Hòa, Tân Phú, Hồ Chí Minh (AM: 08H30 -> 11H45, PM: 13H30 -> 17H45)
+                        .Chân thành cảm ơn!</p>
+                    <br>
+                    <span><b>Phone: </b></span><span>037 335 7405.</span>
+                    <br>
+                    <span><b>Email: </b></span><span>NAV@gmail.com</span>
+                </div>
+
+                <div class="support line_text_footer">
+                    <h3>Chính sách hỗ trợ</h3>
+                    <br>
+                    <a href="#">Tìm kiếm</a>
+                    <br>
+                    <a href="#">Giới Thiệu</a>
+                    <br>
+                    <a href="#">Chính sách đổi trả</a>
+                    <br>
+                    <a href="#">Chính sách bảo mật</a>
+                    <br>
+                    <a href="#">Điều khoản dịch vụ</a>
+                    <br>
+                </div>
+
+                <div class="contact_footer  line_text_footer">
+                    <h3>Thông tin liên kết</h3>
+                    <p>Hãy kết nối với chúng tôi.</p>
+                    <span><i class='bx bxl-facebook-square'></i></span>
+                    <span><i class='bx bxl-instagram'></i></span>
+                    <span><i class='bx bxl-tiktok'></i></span>
+                    <span><i class='bx bxl-twitter'></i></span>
+                </div>
+
+                <div class="report line_text_footer">
+                    <h3>Khiếu nại dịch vụ, góp ý</h3>
+                    <br>
+                    <p>Giờ nào cũng rãnh <br> Bạn vui lòng liên hệ <a href="Contact.html">Tại đây</a></p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="./Js/backandroi.js"></script>
+</body>
+
+</html>

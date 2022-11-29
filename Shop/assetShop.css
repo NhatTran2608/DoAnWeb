@@ -1,0 +1,436 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.width {
+    width: 100%;
+}
+
+.child_body {
+    font-size: 14px;
+    margin-left: 2px;
+    padding: 8px 3px;
+}
+
+header .cart_icon span {
+    font-size: 15px;
+    text-decoration: none;
+    position: absolute;
+    top: -5px;
+}
+
+@keyframes example {
+
+    35%,
+    100% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: rotateX(360deg) scale(1.15);
+    }
+}
+
+.Shop_parent {
+    z-index: 1;
+}
+
+.border {
+    border-radius: 15px;
+}
+
+.text_decor {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.line_H {
+    line-height: 80px;
+}
+
+.line_text_footer {
+    line-height: 1.5;
+}
+
+.width {
+    width: 300px;
+}
+
+
+/*Head NAV*/
+header {
+    height: 80px;
+}
+
+header i {
+    cursor: pointer;
+}
+
+header .shop_name {
+    position: relative;
+}
+
+header .shop_name i {
+    position: absolute;
+}
+
+header .frist_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 0px 4px rgba(125, 134, 138, 0.6);
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+header .search_icon input {
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 30px;
+    right: 250px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: initial;
+}
+
+header .icon_shop i {
+    line-height: 20px;
+    padding: 4px 15px;
+    font-size: 20px;
+    position: relative;
+}
+
+header .cart_icon a {
+    color: black;
+}
+
+header .icon_shop {
+    margin-right: 100px;
+}
+
+header .number_phone {
+    margin-left: 100px;
+}
+
+header .number_phone i {
+    font-size: 25px;
+    height: 27px;
+    width: 27px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 24px;
+}
+
+/*End Head NAV*/
+
+/*Child NAV*/
+
+nav {
+    padding-top: 80px;
+    height: 50px;
+}
+
+
+nav .nav_body {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav .nav_body>li {
+    list-style-type: none;
+    padding: 15px;
+    transition: 0.25s;
+}
+
+
+nav .nav_body>li:hover {
+    transform: scale(1.2);
+}
+
+/*End Child NAV*/
+/*Sub_nav*/
+header .sub_nav {
+    background-color: white;
+    width: 150px;
+    position: absolute;
+    display: none;
+    margin-top: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .sub_nav>li {
+    height: 50px;
+    list-style-type: none;
+    transition: 0.25s;
+
+}
+
+nav .sub_nav>li a {
+    line-height: 50px;
+    display: block;
+    padding-left: 5px;
+}
+
+
+
+header .sub_nav a {
+    font-size: 13px;
+}
+
+header .sub_nav li:hover {
+    background: #dadada;
+}
+
+header .Shop_parent:hover .sub_nav {
+    display: block;
+}
+
+/*slider*/
+#slider {
+    margin-top: 50px;
+}
+
+.text_shop {
+    margin-top: 200px;
+    display: none;
+}
+
+#slider img {
+    width: 78%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#slider .img_slider {
+    text-align: center;
+}
+
+/*End slider*/
+#content {
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 100px;
+}
+
+#content .container {
+    display: grid;
+    grid-template-columns: 270px auto;
+    margin-top: 50px;
+    column-gap: 30px;
+    justify-content: center;
+
+}
+
+#content .list_products .head_list {
+    background-color: #fbf2f2;
+    padding: 15px;
+}
+
+#content .list_products .head_list i {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#content .list_phone {
+    padding: 5px;
+}
+
+#content .list_products .head_list a {
+    text-decoration: none;
+    color: black;
+}
+
+.hide_list {
+    display: none;
+}
+
+#content .list_products .head_list li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+/*card*/
+
+#content .list_product {
+    max-width: 280px;
+    height: 650px;
+    border-radius: 15px;
+    margin-left: 20px;
+    transition: 0.25s;
+}
+
+#content .card_product {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 50px;
+}
+
+#content .iphone {
+    border-radius: 15px;
+}
+
+#content .iphone img {
+    border-radius: 15px;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#content .body_phone {
+    padding: 20px;
+    overflow: hidden;
+}
+
+#content .body_phone h3 {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#content .Gb_phone {
+    margin-bottom: 20px;
+
+}
+
+#content .Gb_phone span {
+    padding: 8px 6px;
+    background-color: #dadada;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#content .Gb_phone span:hover {
+    background-color: #9c9c9c;
+}
+
+#content .list_product>img {
+    width: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#content .list_product:hover {
+    transform: scale(1.05);
+    border: 1px solid #dadada;
+}
+
+#content .bank img {
+    border-radius: 15px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#content .cost {
+    padding: 10px 0px;
+}
+
+#content .cost_phone {
+    background-color: #ef8573;
+    padding: 5px 8px;
+    border-radius: 15px;
+    color: white;
+}
+
+#content .body_child i {
+    font-size: 10px;
+}
+
+#content .body_child {
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+#content .body_child img {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+#content .footer_product button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 25px;
+    border: none;
+    font-size: 16px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#content .footer_product button:hover {
+    background-color: #ccc;
+}
+
+#content .list_bank p {
+    font-size: 12px;
+
+}
+
+#content .about_bank1 {
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.mar_top {
+    margin-top: 47px;
+}
+
+/*footer*/
+
+footer .border {
+    border: 1px solid #ccc;
+    margin-bottom: 60px;
+}
+
+footer .footer_container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+footer .info_contact {
+    width: 250px;
+}
+
+footer .info_contact h3 {
+    font-size: 20px;
+
+}
+
+footer .support a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .contact_footer i {
+    font-size: 38px;
+}
+
+footer .contact_footer p {
+    margin-top: 22px;
+}

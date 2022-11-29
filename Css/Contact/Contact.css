@@ -1,0 +1,98 @@
+.line_text_footer {
+    line-height: 1.5;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    margin-bottom: 100px;
+}
+
+#contact h3 {
+    margin-bottom: 10px;
+}
+
+#contact h3::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    background: #333;
+    height: 2px;
+    margin: 9px;
+}
+
+#contact .container_contact iframe {
+    width: 1144px;
+    height: 500px;
+}
+
+#contact .contact_section {
+    margin-top: 20px;
+}
+
+#contact .contact_box {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#contact .info_input {
+    display: flex;
+}
+
+#contact .info_input input {
+    margin-top: 12px;
+    padding: 6px 12px;
+}
+
+#contact .info_input i {
+    padding: 5px 10px;
+    padding-bottom: 10px;
+    border: 1px solid #dadada;
+    margin-right: 5px;
+}
+
+#contact .contact_me b {
+    border-bottom: 1px solid #dadada;
+}
+
+#contact .write_mail {
+    margin-left: 30px;
+}
+
+#contact .write_mail input {
+    height: 122px;
+    width: 210px;
+    padding: 5px;
+}
+
+#contact .button_send {
+    margin-top: 20px;
+}
+
+#contact .button_send button {
+    padding: 7px 15px;
+    font-weight: 600;
+    border: none;
+    background: black;
+    color: white;
+}
+
+#contact .info_contact {
+
+    width: 575px;
+}
+
+#contact .info_contact i {
+    margin-right: 5px;
+}
+
+#contact .info_contact p {
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.button_send_1 {
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+.line_H {
+    line-height: 80px;
+}
+
+.line_text_footer {
+    line-height: 1.5;
+}
+
+/*About section*/
+#about {
+    margin: 85px 0px;
+    padding: 0px 100px;
+}
+
+#about b {
+    line-height: 1.4;
+    color: #989797;
+}
+
+#about h3 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#about h3::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    background: #333;
+    height: 2px;
+    margin: 9px;
+}
+
+#about .img_staff {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#about .img_staff .staff3 {
+    width: 75%;
+}
